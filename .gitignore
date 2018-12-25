@@ -1,2 +1,5 @@
+.DS_Store
 */.DS_Store
-data/RC_2017-12
+__pycache__/
+compiled_data/
+data/
