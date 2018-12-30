@@ -1,13 +1,12 @@
-# output database.test.text, database.test.reply, database.train.text, database.train.reply
 import sqlite3
 
 def compile_data(test_size, train_size, database):
     assert train_size > test_size, "train_size must be larger than test_size"
 
-    test_text = open("compiled_data/test.text", "a")
-    test_reply = open("compiled_data/test.reply", "a")
-    train_text = open("compiled_data/train.text", "a")
-    train_reply = open("compiled_data/train.reply", "a")
+    test_text = open("compiled_data_prime/test.text", "a")
+    test_reply = open("compiled_data_prime/test.reply", "a")
+    train_text = open("compiled_data_prime/train.text", "a")
+    train_reply = open("compiled_data_prime/train.reply", "a")
 
     connection = sqlite3.connect('{}.db'.format('data/'+database))
     c = connection.cursor()
@@ -16,7 +15,7 @@ def compile_data(test_size, train_size, database):
 
     for row in data:
         text = row[0]
-        reply = row[1] 
+        reply = row[1]
         if not (text == None or reply == None):
             if test_size:
                 test_text.write(text+"\n")
@@ -33,4 +32,4 @@ def create_compilation(file_list, test_size, train_size):
 
 if __name__ == '__main__':
     files = ['RC_2015-05', 'RC_2016-01', 'RC_2017-01', 'RC_2017-02', 'RC_2017-12', 'RC_2018-01', 'RC_2018-02']
-    create_compilation(files, 21000, 21000000)
+    create_compilation(files, 3000, 3000000)

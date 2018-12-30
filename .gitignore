@@ -2,4 +2,5 @@
 */.DS_Store
 __pycache__/
 compiled_data/
+compiled_data_prime/
 data/

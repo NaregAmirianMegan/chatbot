@@ -4,7 +4,7 @@ A chatbot trained on reddit data with a dynamic bidirectional recurrent neural n
 ## Sample Conversation
 
 
-## Data 
+## Data
 Data is kept in SQL databases and then filed into the training and testing files. </br>
 Data Source: http://files.pushshift.io/reddit/comments/ </br>
 
@@ -12,7 +12,11 @@ Data Source: http://files.pushshift.io/reddit/comments/ </br>
 BODY : REPLY = PAIR </br>
 TOTAL COMPILED PAIRS: 62,247,075 : 12.3 GB
 
-## Model (Dynamic Bidirectional RNN) 
+### Data Filtration
+- Filter out null rows </br>
+- Filter out rows with urls
+
+## Model (Dynamic Bidirectional RNN)
 - dynamic : handle input sequences of drastically different lengths as opposed to padding or bucketing </br>
 - bidirectional : handle sentence contexts (LSTM can't remember whole phrase, so it is fed both forwards and backwards timesteps) </br>
 

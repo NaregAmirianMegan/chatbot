@@ -1,0 +1,37 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper {
+  width: 50%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  text-align: center;
+}
+
+.searchTerm {
+  background-color: grey;
+  float: middle;
+  width: 65%;
+  padding: 8px;
+  height: 40px;
+  border-radius: 25px;
+  font-size: 18px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.searchTerm:focus{
+  color: white;
+}
