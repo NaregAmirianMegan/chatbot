@@ -32,4 +32,4 @@ def create_compilation(file_list, test_size, train_size):
 
 if __name__ == '__main__':
     files = ['RC_2015-05', 'RC_2016-01', 'RC_2017-01', 'RC_2017-02', 'RC_2017-12', 'RC_2018-01', 'RC_2018-02']
-    create_compilation(files, 3000, 3000000)
+    create_compilation(files, 1, 7000000)

@@ -1,7 +1,7 @@
 const dots = [];
 const numDots = 200;
 const WIDTH = window.innerWidth;
-const HEIGHT = window.innerHeight+50;
+const HEIGHT = window.innerHeight;
 
 function setup() {
   const cnv = createCanvas(WIDTH, HEIGHT);
@@ -17,6 +17,10 @@ function onClick() {
 }
 
 function keyPressed() {
+  if(keyCode === ENTER) {
+    const input = document.getElementById('searchBox').value;
+    document.getElementById("output").innerHTML = input;
+  }
   for(let dot of dots) {
     dot.pressed = true;
   }

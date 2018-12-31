@@ -4,6 +4,24 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+p {
+  color: grey;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.response {
+  text-align: center;
+}
+
+.wrapper-two {
+  width: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .wrapper {
   width: 50%;
   position: absolute;
