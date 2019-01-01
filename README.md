@@ -1,5 +1,5 @@
 # react-chatbot
-A chatbot trained on reddit data with a dynamic bidirectional recurrent neural network. Front end is written in ReactJS.
+A chatbot trained on reddit data with a dynamic bidirectional recurrent neural network. Front end is written in Processing and CSS.
 
 ## Sample Conversation
 
